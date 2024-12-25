@@ -1,0 +1,283 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+	box-sizing: border-box;
+}
+
+html {
+    background: url(../images/bg.jpg) no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    ;
+    backdrop-filter: blur(3px);
+}
+
+header {
+    background-color: #A800E7
+}
+header ul {
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+header li {
+    margin-right: 0; 
+}
+@media screen and (max-width: 768px) {
+    header ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    header li {
+        margin-bottom: 10px; 
+    }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    header ul {
+        gap: 20px; 
+    }
+    header ul li {
+        font-size: 1.05em; 
+    }
+}
+@media screen and (min-width: 1025px) {
+    header ul {
+        gap: 35px; 
+    }
+    header ul li {
+        font-size: 1.2em; 
+    }
+}
+#title {
+    width: 1000px;
+    margin: 0 auto;
+    height: 60px;
+    text-align: center;
+}
+
+#title a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 60px;
+    display: inline-block;
+    width: 200px;
+    text-align: center;
+}
+
+#title li:nth-child(1) {
+    float: left;
+}
+
+#title li:nth-child(2) {
+    float: left;
+}
+
+#title li:nth-child(4) {
+    float: right;
+}
+
+#title li:nth-child(5) {
+    float: right;
+}
+
+#title li:nth-child(3) {
+    position: relative;
+    width: 200px;
+    float: left;
+    text-align: center;
+}
+
+#title li:nth-child(3) img {
+    width: 80px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    margin-top: 10px;
+}
+
+#title li a:hover {
+    background-color: #660066; 
+}
+
+#index-main {
+    width: 800px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.63);
+    border-radius: 10px;
+    margin-top: 100px;
+    text-align: right;
+    color: #fff;
+    padding: 40px 20px;
+}
+
+.index-maintxt {
+    float: left;
+    text-align: left;
+}
+
+h1 {
+    margin-bottom: 30px;
+}
+
+.index-maintxt ul li {
+    line-height: 40px;
+}
+
+.me {
+    height: 500px;
+	width: 45%;
+}
+
+@media screen and (max-width: 768px) {
+    #index-main {
+        flex-direction: column;
+    }
+   .me {
+        width: 50%; 
+        margin-top: 15px; 
+    }
+}
+footer {
+    width: 100%;
+    bottom: 0px;
+    color: #fff;
+    line-height: 40px;
+    font-size: 14px;
+    height: 40px;
+    margin-top: 40px;
+    background-color: #A800E7;
+    text-align: center;
+}
+@media screen and (min-width: 769px) {
+    footer {
+        font-size: 14px; 
+    }
+}
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.photo_list {
+    font-size: 0px;
+    text-align: center;
+    margin-bottom: -20px;
+}
+
+.photo_list li {
+    display: inline-block;
+    overflow: hidden;
+    width: 220px;
+    margin-bottom: 20px;
+}
+
+.photo_list li img {
+    width: 100%;
+    cursor: pointer;
+    transition: all 0.2s;
+    height: 146px;
+}
+
+.photo_list li:nth-child(3n-1) {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.photo_list li img:hover {
+    transform: translate(0px, 0px) scale(1.2) rotate(0deg);
+}
+
+#work_list {
+    text-align: left;
+}
+
+#work_list img {
+    width: 100%;
+}
+
+#work_list p {
+    margin-top: 10px;
+    text-indent: 2rem;
+}
+
+#hobbyP {
+    text-align: left;
+}
+
+#hobbyP li {
+    border-bottom: 1px dashed #fff;
+    height: 115px;
+    padding: 10px 0px;
+    cursor: pointer;
+}
+
+#hobbyP li:hover img {
+    transform: translate(0px, 0px) scale(1.2) rotate(0deg);
+
+}
+
+.hobbyP_left {
+    width: 200px;
+    float: left;
+    height: 115px;
+    overflow: hidden;
+    margin-right: 20px;
+}
+
+.hobbyP_left img {
+    width: 100%;
+    transition: all 0.2s;
+    height: 115px;
+}
+
+.hobbyP_right p {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+#about_me {
+    width: 800px;
+    text-align: left;
+}
+
+#about_me p {
+    font-size: 14px;
+    line-height: 30px;
+}
+
+/* yls */
+.wangluo {
+    text-align: left;
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.form_list {
+    float: right;
+    text-align: left;
+    font-size: 14px;
+    line-height: 30px;
+    margin-left: 30px;
+}
+
+.wangluo2 {
+    padding-top: 10px;
+}
+
+.form_list input {
+    width: 240px;
+    height: 28px;
+    border: 0px;
+    margin-top: 5px;
+}
+
+textarea {
+    margin-top: 5px;
+    border: 0px;
+    width: 240px;
+}

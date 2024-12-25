@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: url(../images/bg.jpg) no-repeat center fixed;
+    backdrop-filter: blur(3px);
+}
+
+header {
+    background-color: #A800E7;
+}
+
+header ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    margin: 0;
+}
+
+header li {
+    margin-right: 0;
+}
+
+header ul a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+}
+
+header ul a:hover {
+    background-color: #660066;
+}
+
+#index-main {
+    width: 90%;
+    margin: 50px auto;
+    background-color: rgba(0, 0, 0, 0.30);
+    border-radius: 10px;
+    padding: 30px 20px;
+    color: #fff;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form_list form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form_list form p {
+    margin-bottom: 10px;
+}
+
+.form_list form input {
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.form_list textarea {
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+#about_me {
+    margin-top: 30px;
+}
+
+#about_me p {
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    header ul a {
+        font-size: 16px;
+    }
+   .form_list form input {
+        padding: 6px;
+    }
+   .form_list textarea {
+        padding: 6px;
+    }
+    #about_me p {
+        font-size: 0.95em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    header ul a {
+        font-size: 14px;
+        text-align: center;
+    }
+    #index-main {
+        width: 95%;
+    }
+   .form_list form input {
+        padding: 5px;
+    }
+   .form_list textarea {
+        padding: 5px;
+    }
+    #about_me p {
+        font-size: 0.9em;
+    }
+}
+footer {
+    width: 100%;
+    bottom: 0px;
+    color: #fff;
+    line-height: 40px;
+    font-size: 14px;
+    height: 40px;
+    margin-top: 40px;
+    background-color:#A800E7;
+    text-align: center;
+}
